@@ -74,16 +74,16 @@ export default function Textform(props) {
             style={{backgroundColor:props.mode==='light'?'white':'#080b4c',color:props.mode==='dark'?'white':'black'}}
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-1" onClick={handleupclick}>
+        <button className="btn btn-primary mx-3" onClick={handleupclick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-1" onClick={handleloclick}>
+        <button className="btn btn-primary mx-3" onClick={handleloclick}>
           Convert to Lowercase
         </button>
-       <button className="btn btn-primary mx-1" onClick={handleCopy}>
+       <button className="btn btn-primary mx-3" onClick={handleCopy}>
           Copy Text
   </button>
-        <button className="btn btn-primary mx-1" onClick={handleExtraspaces}>
+        <button className="btn btn-primary mx-3" onClick={handleExtraspaces}>
          Remove Extra Space
         </button>
 
@@ -95,7 +95,7 @@ export default function Textform(props) {
           
         
         <p>{0.008 * text.split(" ").length} Minutes read</p>
-        <h2>priview</h2>
+        <h2>preview</h2>
         <p>{text.length>0?text:"enter something to priview here..."}</p>
       </div>
     </>
